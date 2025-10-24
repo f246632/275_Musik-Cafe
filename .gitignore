@@ -1,0 +1,58 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+
+# Build and Distribution
+dist/
+build/
+*.zip
+*.tar.gz
+
+# Node modules (if added in future)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Image Source Files (keep originals in source folder)
+*.psd
+*.ai
+*.sketch
+*.fig
+
+# Backup Files
+*.bak
+*.backup
+*~
+
+# Documentation Drafts
+docs/drafts/
+*.draft.md
+
+# Mac Specific
+Icon?

@@ -1,0 +1,458 @@
+/* ===================================
+   RESPONSIVE STYLES
+   Mobile-first approach
+   =================================== */
+
+/* Tablet: 768px and below */
+@media screen and (max-width: 768px) {
+    /* Typography adjustments */
+    html {
+        font-size: 14px;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    /* Navigation */
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        flex-direction: column;
+        background: var(--bg-white);
+        padding: var(--spacing-md);
+        gap: 0;
+        box-shadow: 0 5px 20px var(--shadow-color);
+        transition: var(--transition-normal);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        padding: var(--spacing-sm) 0;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-link {
+        display: block;
+        width: 100%;
+    }
+
+    /* Hero */
+    .hero {
+        height: 80vh;
+        min-height: 500px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Sections */
+    .section {
+        padding: var(--spacing-lg) 0;
+    }
+
+    /* About */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .about-image {
+        order: -1;
+    }
+
+    /* Gallery */
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--spacing-sm);
+    }
+
+    /* Location */
+    .location-content {
+        grid-template-columns: 1fr;
+    }
+
+    .location-map {
+        order: -1;
+    }
+
+    .location-map iframe {
+        height: 350px;
+    }
+
+    /* Contact */
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+        text-align: center;
+    }
+
+    /* Modal */
+    .modal-content {
+        max-width: 95%;
+        max-height: 85%;
+    }
+
+    .modal-close {
+        top: 10px;
+        right: 15px;
+        font-size: 30px;
+    }
+
+    .modal-nav {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    .modal-prev {
+        left: 10px;
+    }
+
+    .modal-next {
+        right: 10px;
+    }
+}
+
+/* Mobile: 480px and below */
+@media screen and (max-width: 480px) {
+    /* Typography */
+    html {
+        font-size: 13px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    /* Container */
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+
+    /* Navigation */
+    .nav-brand h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Hero */
+    .hero {
+        height: 70vh;
+        min-height: 450px;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    /* Sections */
+    .section {
+        padding: var(--spacing-md) 0;
+    }
+
+    .section-header {
+        margin-bottom: var(--spacing-md);
+    }
+
+    /* About */
+    .about-text h3 {
+        font-size: 1.6rem;
+    }
+
+    .feature-icon {
+        font-size: 1.5rem;
+    }
+
+    /* Menu */
+    .menu-category {
+        padding: var(--spacing-sm);
+    }
+
+    .category-title {
+        font-size: 1.5rem;
+    }
+
+    .menu-item {
+        padding: var(--spacing-sm);
+    }
+
+    .item-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+    }
+
+    /* Gallery */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    /* Location */
+    .location-map iframe {
+        height: 300px;
+    }
+
+    .info-card {
+        padding: var(--spacing-sm);
+    }
+
+    /* Contact */
+    .contact-info h3 {
+        font-size: 1.6rem;
+    }
+
+    .contact-icon {
+        font-size: 1.5rem;
+    }
+
+    .contact-form-wrapper {
+        padding: var(--spacing-sm);
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 10px 24px;
+        font-size: 0.95rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: var(--spacing-md) 0;
+    }
+
+    .footer-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .footer-section h4 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Large Desktop: 1400px and above */
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .hero-title {
+        font-size: 5rem;
+    }
+
+    .section-title {
+        font-size: 3.2rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .hero-buttons,
+    .scroll-indicator,
+    .contact-form,
+    .modal,
+    .footer {
+        display: none;
+    }
+
+    .hero {
+        height: auto;
+        min-height: auto;
+        page-break-after: always;
+    }
+
+    .section {
+        page-break-inside: avoid;
+    }
+
+    body {
+        font-size: 12pt;
+        color: #000;
+        background: #fff;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+    }
+}
+
+/* Accessibility - Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #000;
+        --text-dark: #000;
+        --text-light: #333;
+        --border-color: #000;
+    }
+
+    .btn {
+        border-width: 3px;
+    }
+
+    .nav-link,
+    .menu-item,
+    .gallery-item,
+    .info-card,
+    .contact-form input,
+    .contact-form textarea {
+        border: 2px solid #000;
+    }
+}
+
+/* Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+    /* Uncomment to enable dark mode
+    :root {
+        --bg-light: #1a1a1a;
+        --bg-white: #2a2a2a;
+        --bg-dark: #0a0a0a;
+        --text-dark: #f5f5f5;
+        --text-light: #ccc;
+        --text-white: #ffffff;
+        --border-color: #444;
+        --shadow-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar,
+    .menu-category,
+    .info-card,
+    .contact-form-wrapper {
+        background: var(--bg-white);
+    }
+
+    .section:nth-child(even) {
+        background: var(--bg-dark);
+    }
+    */
+}
+
+/* Landscape orientation on mobile */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        height: 100vh;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    /* Larger touch targets */
+    .btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    .nav-link {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+
+    /* Remove hover effects */
+    .gallery-item:hover .gallery-overlay,
+    .gallery-item:hover img,
+    .menu-item:hover,
+    .info-card:hover {
+        opacity: 1;
+        transform: none;
+    }
+
+    /* Ensure tap highlights */
+    a, button, .btn, .nav-link, .gallery-item {
+        -webkit-tap-highlight-color: rgba(139, 69, 19, 0.2);
+    }
+}
+
+/* Ultra-wide screens */
+@media screen and (min-width: 2000px) {
+    .container {
+        max-width: 1800px;
+    }
+
+    html {
+        font-size: 18px;
+    }
+
+    .hero-title {
+        font-size: 6rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
